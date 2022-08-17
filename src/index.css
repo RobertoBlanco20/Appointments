@@ -30,6 +30,7 @@ h1{
 
 .citas{
   width: 30%;
+  margin-top: 0.70em;
 }
 
 .citas-box {
@@ -103,3 +104,18 @@ label{
 }
 
 
+.eliminar{
+  color: #fff;
+  background-color: #EA2B1F;
+  font-weight: 800;
+  padding: 0.5em;
+  margin: 1em auto;
+  width: 100%;
+  border: 1px solid #8f140e;
+  border-radius: 3px;
+}
+
+.eliminar:hover{
+  background-color: #8f140e;
+  cursor: pointer;
+}

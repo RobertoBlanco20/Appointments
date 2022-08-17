@@ -34,7 +34,7 @@ const Formulario = ({saveAppointment}) => {
         
         
         // Validar formulario
-        if( name.trim() === '' || service1.trim() === '' || date.trim() === '' || hour.trim() === '' || notes.trim() === '' ){
+        if( name.trim() === '' || service1.trim() === '' || date.trim() === '' || hour.trim() === '' ){
             setError(true)
             return
         }
@@ -44,7 +44,6 @@ const Formulario = ({saveAppointment}) => {
 
         // Agregarle ID
         appointment.id = uuidv4();
-        console.log(appointment)
 
         // Crear la cita
         saveAppointment(appointment)
@@ -85,10 +84,10 @@ const Formulario = ({saveAppointment}) => {
                     onChange={handleChange}
                     value={service1}
                 >
-                    <option value="NoValue">No especificado</option>  
+                    <option value="">No especificado</option>  
                     <option value="Corte">Corte</option>
                     <option value="Alisado">Alisado</option>
-                    <option value="BotoxCapilar">Botox Capilar</option>
+                    <option value="Botox Capilar">Botox Capilar</option>
                     <option value="Tintura">Tintura</option>
                     <option value="Lavado">Lavado</option>                  
                 </select>
@@ -99,7 +98,7 @@ const Formulario = ({saveAppointment}) => {
                     onChange={handleChange}
                     value={service2}
                     >
-                    <option value="NoValue">No especificado</option>    
+                    <option value="">No especificado</option>    
                     <option value="Corte">Corte</option>
                     <option value="Alisado">Alisado</option>
                     <option value="Botox Capilar">Botox Capilar</option>
@@ -113,10 +112,10 @@ const Formulario = ({saveAppointment}) => {
                     onChange={handleChange}
                     value={service3}
                     >
-                    <option value="NoValue">No especificado</option>     
+                    <option value="">No especificado</option>     
                     <option value="Corte">Corte</option>
                     <option value="Alisado">Alisado</option>
-                    <option value="BotoxCapilar">Botox Capilar</option>
+                    <option value="Botox Capilar">Botox Capilar</option>
                     <option value="Tintura">Tintura</option>
                     <option value="Lavado">Lavado</option>                  
                 </select>

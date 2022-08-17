@@ -15,7 +15,8 @@ body{
 }
 
 h1{
-  text-align: center
+  text-align: center;
+  margin-top: 2em;
 }
 
 .container{
@@ -27,6 +28,25 @@ h1{
   width: 30%;
 }
 
+h2{
+  text-align: center;
+  font-size: 1.8em;
+  margin: 2em auto;
+}
+
+.error{
+  width: 97%;
+  background-color: #fff;
+  color: #EA2B1F;
+  text-align: center;
+  border-bottom: 2px solid #EA2B1F;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 1em;
+  margin-bottom: 2em;
+  
+}
 
 
 form, input, select, option, textarea{

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './index.css';
 import Formulario from './components/Formulario'
+import Citas from './components/Citas'
 
 function App() {
 
@@ -22,7 +23,17 @@ function App() {
               saveAppointment={saveAppointment}
             />
         </div>
-        <div>2</div>
+        <div className='citas'>
+
+          <h2>Citas</h2>
+
+          {appointments.map( appointment => (
+            <Citas
+              appointment={appointment}
+              key={appointment.id}
+            />
+          ) )}
+        </div>
       </div>
     </div>
   );

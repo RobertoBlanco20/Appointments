@@ -85,6 +85,7 @@ const Formulario = ({saveAppointment}) => {
                     onChange={handleChange}
                     value={service1}
                 >
+                    <option value="NoValue">No especificado</option>  
                     <option value="Corte">Corte</option>
                     <option value="Alisado">Alisado</option>
                     <option value="BotoxCapilar">Botox Capilar</option>

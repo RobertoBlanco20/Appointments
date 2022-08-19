@@ -4,13 +4,27 @@ import Formulario from './components/Formulario'
 import Citas from './components/Citas'
 
 function App() {
+
+  /* Citas en localStorage */
+
+  let initalAppointmens = JSON.parse(localStorage.getItem('appointments'));
+
+  if(!initalAppointmens){
+    initalAppointmens = [];
+  }
+
+
   /* Arreglo de citas */
-  const [appointments, setAppointments ] = useState([]);
+  const [appointments, setAppointments ] = useState(initalAppointmens );
 
   /* UseEffecto que cambia al cargar el documento o al modificar las citas */
 
   useEffect( () => {
-    console.log('Documento listo, o se modificaron las citas')
+    if(initalAppointmens){
+      localStorage.setItem('appointments', JSON.stringify(appointments))
+    } else {
+      localStorage.setItem('appointments', JSON.stringify([]))
+    }
   }, [appointments] )
 
   /* Pasando la nueva cita y guardando una copia de lo que ya existia */

@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="main">
-      <h1>Appointment's</h1>
+      <h1>Beauty Salon Appointment's</h1>
       
       <div className='container'>
         <div className="formulario">
